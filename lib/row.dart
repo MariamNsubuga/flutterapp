@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class RowsClass extends StatelessWidget {
   const RowsClass({super.key});
@@ -17,8 +16,8 @@ class RowsClass extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 198, 227, 241),
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 198, 227, 241),
         ),
         child: const Column(
           children: [

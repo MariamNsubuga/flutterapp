@@ -16,3 +16,18 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
+android {
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "ug.co.mta.app_test"
+        // applicationId = "AIzaSyD7riw5WJIpwQtd7qJeY5XYJOii0gx_4XM"
+        // Minimum Android version for Google Maps SDK
+        // https://developers.google.com/maps/flutter-package/config#android
+        minSdk = 21
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutterVersionCode.toInteger()
+        versionName = flutterVersionName
+    }
+
+}

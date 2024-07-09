@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:app_test/navbar.dart';
 
-class TestClass extends StatelessWidget {
-  const TestClass({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +18,13 @@ class TestClass extends StatelessWidget {
         // backgroundColor: const Color.fromARGB(255, 14, 90, 17),
         backgroundColor: const Color(0xff03967d),
       ),
+      drawer:  Navbar(),
       body: Container(
-        decoration: BoxDecoration(color: Colors.blue),
-        child: Column(
+        decoration: const BoxDecoration(color: Colors.blue),
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Text("column"),
-            BackButton(),
-            Text("column")
-        
-        ],),
+          children: [Text("column"), BackButton(), Text("column")],
+        ),
       ),
     );
   }
